@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_bmi", "001_bmi\001_bmi.csproj", "{2D48BC1F-5EC0-4316-81AC-F07853BBB291}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_bmi", "002_bmi\002_bmi.csproj", "{ECD7CCDD-F3DB-4C89-91BB-87EADC169992}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D48BC1F-5EC0-4316-81AC-F07853BBB291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D48BC1F-5EC0-4316-81AC-F07853BBB291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D48BC1F-5EC0-4316-81AC-F07853BBB291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D48BC1F-5EC0-4316-81AC-F07853BBB291}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECD7CCDD-F3DB-4C89-91BB-87EADC169992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECD7CCDD-F3DB-4C89-91BB-87EADC169992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECD7CCDD-F3DB-4C89-91BB-87EADC169992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECD7CCDD-F3DB-4C89-91BB-87EADC169992}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E369267-4A35-41DD-AD37-BB71BFD4DD0A}
+	EndGlobalSection
+EndGlobal
