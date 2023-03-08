@@ -17,7 +17,14 @@ namespace _001_bmi
       double weight = double.Parse(Console.ReadLine());
 
       double bmi = weight / (height / 100 * height / 100);
-      Console.WriteLine("BMI = " + bmi);
+      //Console.WriteLine("BMI = " + bmi);
+      //Console.WriteLine("BMI = {0,20:F2}", bmi);
+      //Console.WriteLine("CMI = {0,20:F2}", 5897563.56487);
+
+      Console.WriteLine("BMI = {0:F2}", bmi);
+      //Console.WriteLine("BMI = {0:#.##}", bmi);
+
+      // 비만 판정
     }
   }
 }

@@ -24,6 +24,7 @@ namespace _002_bmi
       double bmi 
         = weight / (height / 100 * height / 100);
       label3.Text = "BMI = " + bmi;
+      label3.Text = String.Format("BMI = {0}", bmi);
     }
   }
 }
