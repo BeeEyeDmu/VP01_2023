@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "019_clock", "019_clock\019_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "020_FormClock", "020_FormClock\020_FormClock.csproj", "{F03B5657-B022-47BB-A5F7-3DA5B2D06431}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "021_adClock", "021_adClock\021_adClock.csproj", "{D32016C7-DB58-4919-9BE4-C782CE987B62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "022_2Forms", "022_2Forms\022_2Forms.csproj", "{6FF4231F-AEA8-4DB4-9213-5839F3DC3248}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +133,14 @@ Global
 		{F03B5657-B022-47BB-A5F7-3DA5B2D06431}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F03B5657-B022-47BB-A5F7-3DA5B2D06431}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F03B5657-B022-47BB-A5F7-3DA5B2D06431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D32016C7-DB58-4919-9BE4-C782CE987B62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D32016C7-DB58-4919-9BE4-C782CE987B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D32016C7-DB58-4919-9BE4-C782CE987B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D32016C7-DB58-4919-9BE4-C782CE987B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF4231F-AEA8-4DB4-9213-5839F3DC3248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF4231F-AEA8-4DB4-9213-5839F3DC3248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF4231F-AEA8-4DB4-9213-5839F3DC3248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF4231F-AEA8-4DB4-9213-5839F3DC3248}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

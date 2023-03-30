@@ -8,10 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _020_FormClock
+namespace _021_adClock
 {
   public partial class Form1 : Form
-  {
+  {    
     // 필드를 만든다
     private Graphics g;
     private bool aClockFlag = true;
@@ -27,11 +27,11 @@ namespace _020_FormClock
     {
       InitializeComponent();
 
-      this.Text = "Form Clock by bikang";
+      this.Text = "Analog/Digital Clock by bikang";
       panel1.BackColor = Color.White;
-      this.ClientSize 
-        = new Size(clientSize, 
-              clientSize + menuStrip1.Height); 
+      this.ClientSize
+        = new Size(clientSize,
+              clientSize + menuStrip1.Height);
 
       g = panel1.CreateGraphics();
 
@@ -42,7 +42,7 @@ namespace _020_FormClock
     // 아날로그 시계 세팅
     private void aClockSetting()
     {
-      center = new Point(clientSize/2, clientSize/2);
+      center = new Point(clientSize / 2, clientSize / 2);
       radius = clockSize / 2;
 
       hourHand = (int)(radius * 0.5);
@@ -64,13 +64,13 @@ namespace _020_FormClock
       panel1.Refresh();
       DateTime c = DateTime.Now;  // 현재시간
 
-      if(aClockFlag == true)  // 아날로그 시계
+      if (aClockFlag == true)  // 아날로그 시계
       {
         // 시계판
         DrawClockFace();
 
         // 시계바늘의 각도를 라디안으로 표현
-        double radHr = (c.Hour % 12 + c.Minute / 60.0) * 30 * Math.PI/180;
+        double radHr = (c.Hour % 12 + c.Minute / 60.0) * 30 * Math.PI / 180;
         double radMin = (c.Minute + c.Second / 60.0) * 6 * Math.PI / 180;
         double radSec = c.Second * 6 * Math.PI / 180;
 
@@ -78,17 +78,17 @@ namespace _020_FormClock
 
         // 시계배꼽
         int coreSize = 32;
-        Rectangle r = new Rectangle(center.X - coreSize/2, 
-          center.Y - coreSize/2, 
+        Rectangle r = new Rectangle(center.X - coreSize / 2,
+          center.Y - coreSize / 2,
           coreSize, coreSize);
         g.FillEllipse(Brushes.Gold, r);
         g.DrawEllipse(new Pen(Brushes.Green, 5), r);
       }
       else  // 디지털 시계
       {
-        Font fDate = new Font("맑은 고딕", 12, 
+        Font fDate = new Font("맑은 고딕", 12,
           FontStyle.Bold);
-        Font fTime = new Font("맑은 고딕", 32, 
+        Font fTime = new Font("맑은 고딕", 32,
           FontStyle.Bold | FontStyle.Italic);
 
         Brush bDate = Brushes.SkyBlue;
@@ -108,7 +108,7 @@ namespace _020_FormClock
     // 각도를 받아서 시계바늘을 그리는 메소드
     private void DrawHands(double radHr, double radMin, double radSec)
     {
-      DrawLine((int)(hourHand * Math.Sin(radHr)), 
+      DrawLine((int)(hourHand * Math.Sin(radHr)),
         (int)(hourHand * Math.Cos(radHr)), Brushes.RoyalBlue, 14);
       DrawLine((int)(minHand * Math.Sin(radMin)),
         (int)(minHand * Math.Cos(radMin)), Brushes.SkyBlue, 9);
@@ -126,24 +126,26 @@ namespace _020_FormClock
     private void DrawClockFace()
     {
       Pen p = new Pen(Color.LightSteelBlue, 40);
-      g.DrawEllipse(p, center.X - clockSize/2, center.Y - clockSize/2,
+      g.DrawEllipse(p, center.X - clockSize / 2, center.Y - clockSize / 2,
         clockSize, clockSize);
 
       // 시간위치 표시
       int dotSize = 12;
-      for(int i = 0; i<360; i+=30)
+      for (int i = 0; i < 360; i += 30)
       {
         int x = (int)(center.X + radius * Math.Sin(i * Math.PI / 180)
-          -dotSize/2);
+          - dotSize / 2);
         int y = (int)(center.Y - radius * Math.Cos(i * Math.PI / 180)
-          -dotSize/2);
+          - dotSize / 2);
         g.FillEllipse(Brushes.AliceBlue, x, y, dotSize, dotSize);
       }
     }
 
     private void 디지털ToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      aClockFlag = false;
+      Form2 form2 = new Form2();
+      this.Hide();
+      form2.ShowDialog();      
     }
 
     private void 아날로그ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -160,5 +162,6 @@ namespace _020_FormClock
     {
       this.Close();
     }
+
   }
 }
