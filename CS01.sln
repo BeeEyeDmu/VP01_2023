@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "018_chart2", "018_chart2\01
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "019_clock", "019_clock\019_clock.csproj", "{77294B97-3E7E-44E6-8BD6-CFE4915B18BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "020_FormClock", "020_FormClock\020_FormClock.csproj", "{F03B5657-B022-47BB-A5F7-3DA5B2D06431}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{77294B97-3E7E-44E6-8BD6-CFE4915B18BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77294B97-3E7E-44E6-8BD6-CFE4915B18BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77294B97-3E7E-44E6-8BD6-CFE4915B18BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F03B5657-B022-47BB-A5F7-3DA5B2D06431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F03B5657-B022-47BB-A5F7-3DA5B2D06431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F03B5657-B022-47BB-A5F7-3DA5B2D06431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F03B5657-B022-47BB-A5F7-3DA5B2D06431}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
