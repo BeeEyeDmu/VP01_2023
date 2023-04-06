@@ -56,6 +56,7 @@
       this.dataGridView1.RowTemplate.Height = 23;
       this.dataGridView1.Size = new System.Drawing.Size(476, 235);
       this.dataGridView1.TabIndex = 0;
+      this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
       // 
       // label1
       // 
@@ -138,6 +139,7 @@
       this.btnViewAll.TabIndex = 9;
       this.btnViewAll.Text = "View All";
       this.btnViewAll.UseVisualStyleBackColor = true;
+      this.btnViewAll.Click += new System.EventHandler(this.btnViewAll_Click);
       // 
       // btnDeleteAll
       // 
@@ -148,6 +150,7 @@
       this.btnDeleteAll.TabIndex = 10;
       this.btnDeleteAll.Text = "모두 삭제";
       this.btnDeleteAll.UseVisualStyleBackColor = true;
+      this.btnDeleteAll.Click += new System.EventHandler(this.btnDeleteAll_Click);
       // 
       // btnDelete
       // 
@@ -158,6 +161,7 @@
       this.btnDelete.TabIndex = 12;
       this.btnDelete.Text = "삭제";
       this.btnDelete.UseVisualStyleBackColor = true;
+      this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
       // 
       // btnInsert
       // 
@@ -179,6 +183,7 @@
       this.btnUpdate.TabIndex = 14;
       this.btnUpdate.Text = "수정";
       this.btnUpdate.UseVisualStyleBackColor = true;
+      this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
       // 
       // btnSearch
       // 
@@ -200,6 +205,7 @@
       this.btnClose.TabIndex = 16;
       this.btnClose.Text = "종료";
       this.btnClose.UseVisualStyleBackColor = true;
+      this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
       // 
       // btnClear
       // 
