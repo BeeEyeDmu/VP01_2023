@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "022_2Forms", "022_2Forms\02
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "023_firebase", "023_firebase\023_firebase.csproj", "{313CB73E-3BF5-441B-8463-2CE7C2E01E5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "024_TwoForms", "024_TwoForms\024_TwoForms.csproj", "{5D381718-D3EF-48CF-A87B-3B123368C46A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{313CB73E-3BF5-441B-8463-2CE7C2E01E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{313CB73E-3BF5-441B-8463-2CE7C2E01E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{313CB73E-3BF5-441B-8463-2CE7C2E01E5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D381718-D3EF-48CF-A87B-3B123368C46A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D381718-D3EF-48CF-A87B-3B123368C46A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D381718-D3EF-48CF-A87B-3B123368C46A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D381718-D3EF-48CF-A87B-3B123368C46A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
